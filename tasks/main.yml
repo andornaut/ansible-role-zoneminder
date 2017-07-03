@@ -9,7 +9,6 @@
 
 - name: Start Zoneminder Docker container
   docker_service:
-    build: no
     project_name: zoneminder
     definition:
       version: "2"
@@ -20,6 +19,7 @@
           ports:
             - "{{ zoneminder_port }}:80"
           restart: always
+          tmpfs: /tmp/zoneminder-tmpfs
           volumes:
             - "{{ docker_volumes.zoneminder_events }}:/var/lib/zoneminder/events"
             - "{{ docker_volumes.zoneminder_images }}:/var/lib/zoneminder/images"
