@@ -1,8 +1,8 @@
 ---
 docker_volumes:
-  zoneminder_events: "zoneminder-events"
-  zoneminder_images: "zoneminder-images"
-  zoneminder_mysql: "zoneminder-mysql"
+  zoneminder_events: /var/docker-volumes/zoneminder-events
+  zoneminder_images: /var/docker-volumes/zoneminder-images
+  zoneminder_mysql: /var/docker-volumes/zoneminder-mysql
 
 zoneminder_docker_image: andornaut/zoneminder
 zoneminder_port: 8080
