@@ -1,12 +1,4 @@
 ---
-- name: Create Docker volume directories
-  file:
-    path: "{{ item }}"
-    state: directory
-    mode: 0775
-  become: true
-  with_items: "{{ docker_volumes.values() }}"
-
 - name: Start Zoneminder Docker container
   docker_service:
     project_name: zoneminder
