@@ -7,3 +7,7 @@ An [Ansible](https://www.ansible.com/) role that configures and runs
 ## Variables
 
 See [default values](./defaults/main.yml).
+
+## Related projects
+
+* [docker-zoneminder](https://github.com/andornaut/docker-zoneminder)
