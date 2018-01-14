@@ -2,6 +2,7 @@
 - name: Start Zoneminder Docker container
   docker_service:
     project_name: zoneminder
+    pull: yes
     definition:
       version: "2"
       services:
