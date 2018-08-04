@@ -1,6 +1,6 @@
 # ansible-role-zoneminder
 
-An [Ansible](https://www.ansible.com/) role that configures and runs
+An [Ansible](https://www.ansible.com/) role that provisions
 [Zoneminder](https://zoneminder.com/) in a
 [Docker](https://docs.docker.com/engine/installation/linux/docker-ce/ubuntu/) container.
 
@@ -8,6 +8,6 @@ An [Ansible](https://www.ansible.com/) role that configures and runs
 
 See [default values](./defaults/main.yml).
 
-## Related projects
+## Links
 
 * [docker-zoneminder](https://github.com/andornaut/docker-zoneminder)

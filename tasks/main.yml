@@ -14,6 +14,6 @@
           restart: always
           tmpfs: /tmp/zoneminder-tmpfs
           volumes:
-            - "{{ docker_volumes.zoneminder_events }}:/var/cache/zoneminder/events"
-            - "{{ docker_volumes.zoneminder_images }}:/var/cache/zoneminder/images"
-            - "{{ docker_volumes.zoneminder_mysql }}:/var/lib/mysql"
+            - "{{ zoneminder_docker_volumes.events }}:/var/cache/zoneminder/events"
+            - "{{ zoneminder_docker_volumes.images }}:/var/cache/zoneminder/images"
+            - "{{ zoneminder_docker_volumes.mysql }}:/var/lib/mysql"
