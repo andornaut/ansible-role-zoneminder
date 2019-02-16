@@ -5,5 +5,5 @@ zoneminder_docker_volumes:
   images: /var/docker-volumes/zoneminder-images
   mysql: /var/docker-volumes/zoneminder-mysql
 zoneminder_port: 8080
-zoneminder_shm_size: 512m
+zoneminder_shm_size: "512m"
 
