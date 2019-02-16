@@ -4,17 +4,16 @@
     project_name: zoneminder
     pull: yes
     definition:
-      version: "2"
+      version: "2.2"
       services:
         zoneminder:
           container_name: zoneminder
           image: "{{ zoneminder_docker_image }}"
+          init: true
           ports:
             - "{{ zoneminder_port }}:80"
-          restart: always
-          shm_size: "{{ zoneminder_shm_size }}"
-          tmpfs: /tmp/zoneminder-tmpfs
+          restart: on-failure
           volumes:
-            - "{{ zoneminder_docker_volumes.events }}:/var/cache/zoneminder/events"
-            - "{{ zoneminder_docker_volumes.images }}:/var/cache/zoneminder/images"
+            - "{{ zoneminder_docker_volumes.events }}:/var/lib/zoneminder/events"
+            - "{{ zoneminder_docker_volumes.images }}:/var/lib/zoneminder/images"
             - "{{ zoneminder_docker_volumes.mysql }}:/var/lib/mysql"
