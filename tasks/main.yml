@@ -13,6 +13,7 @@
           ports:
             - "{{ zoneminder_port }}:80"
           restart: on-failure
+          shm_size: "{{ zoneminder_shm_size }}"
           volumes:
             - "{{ zoneminder_docker_volumes.events }}:/var/lib/zoneminder/events"
             - "{{ zoneminder_docker_volumes.images }}:/var/lib/zoneminder/images"
