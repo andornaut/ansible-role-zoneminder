@@ -15,6 +15,6 @@
           restart: on-failure
           shm_size: "{{ zoneminder_shm_size }}"
           volumes:
-            - "{{ zoneminder_docker_volumes.events }}:/var/lib/zoneminder/events"
-            - "{{ zoneminder_docker_volumes.images }}:/var/lib/zoneminder/images"
+            - "{{ zoneminder_docker_volumes.events }}:/var/cache/zoneminder/events"
+            - "{{ zoneminder_docker_volumes.images }}:/var/cache/zoneminder/images"
             - "{{ zoneminder_docker_volumes.mysql }}:/var/lib/mysql"
