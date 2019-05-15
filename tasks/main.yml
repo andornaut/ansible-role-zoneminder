@@ -3,6 +3,7 @@
   docker_service:
     project_name: zoneminder
     pull: yes
+    recreate: yes
     definition:
       version: "2.2"
       services:
@@ -12,7 +13,6 @@
           init: true
           ports:
             - "{{ zoneminder_port }}:80"
-          pull: true
           restart: always
           shm_size: "{{ zoneminder_shm_size }}"
           volumes:
