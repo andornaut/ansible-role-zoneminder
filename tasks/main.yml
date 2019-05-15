@@ -3,7 +3,7 @@
   docker_service:
     project_name: zoneminder
     pull: yes
-    recreate: yes
+    recreate: always
     definition:
       version: "2.2"
       services:
