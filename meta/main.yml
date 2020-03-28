@@ -3,6 +3,6 @@ galaxy_info:
   author: andornaut
   description: Dockerized Zoneminder on Ubuntu
   license: MIT
-  min_ansible_version: 2.2
+  min_ansible_version: 2.6
   galaxy_tags:
     - docker zoneminder
