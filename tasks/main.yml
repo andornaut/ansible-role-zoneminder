@@ -1,6 +1,6 @@
 ---
 - name: Start Zoneminder Docker container
-  docker_service:
+  docker_compose:
     project_name: zoneminder
     pull: yes
     recreate: always
