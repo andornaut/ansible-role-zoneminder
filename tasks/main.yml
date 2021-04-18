@@ -13,7 +13,7 @@
           init: true
           ports:
             - "{{ zoneminder_port }}:80"
-          restart: always
+          restart: unless-stopped
           shm_size: "{{ zoneminder_shm_size }}"
           volumes:
             - "{{ zoneminder_docker_volumes.events }}:/var/cache/zoneminder/events"
